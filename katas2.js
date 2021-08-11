@@ -13,7 +13,7 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 function multiply(mult, multi){
     let resultado = 0
     for (let i = 0; i < mult; i++) {
-       resultado = resultado + multi    
+       resultado = add(resultado,multi)    
     }
     return resultado
 }
