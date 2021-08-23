@@ -53,12 +53,21 @@ console.assert(factorial(5) === 120, 'A função factorial não está funcionand
 
 
   // BONUS (aviso: o grau de dificuldade é bem maior !!!)
- 
- 
+  
+  function fibonacci(n) {
+    let resulfibo0 = 0; 
+    let resulfibo1 = 1;
+    let fiboresul = [];
+    
+    for(let i=0 ; i<= n ; i++){
+        fiboresul.push(resulfibo1)
+        resulfibo1 = add(resulfibo1, resulfibo0)
+        resulfibo0 = fiboresul[i];
+    }
+    
+    return fiboresul[n-1]
+    
+    }
       
- 
-
-
-
 // descomente a linha seguinte para testar sua função
-//console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
